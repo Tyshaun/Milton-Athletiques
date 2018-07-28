@@ -1,0 +1,44 @@
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: auto; 
+    height: auto; 
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 60%
+}
+
+img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slideshow > img { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#home{
+    
+    display:inline-block;
+    position: relative;
+    color: red;
+    background-color: red;
+    width: auto;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 5%
+    
+}

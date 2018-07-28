@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <link rel="stylesheet" href="MA-Styles.css">
+</head>
+    <body>
+        
+        <div data-role="page" id="SignIn">
+        <div data-role="panel" data-display="overlay" id="myPanel" >
+            <h3></h3>
+            <!-- panel content goes here -->
+            
+            <ul data-role="listview">
+            <a href="#myPannel" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete">Close</a>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Photos</a></li>
+              <li><a href="">Calendar</a></li>
+              <li><a href="">Members</a></li>
+              <li><a href="">Forums</a></li>
+              <li><a href="">Links</a></li>
+              <li><a href="">Coaching</a></li>
+              <li><a href="">Join Us</a></li>
+              <li><a href="">Results and Stats</a></li>
+            </ul>
+
+        </div>
+        
+          <div data-role="header" id="myHeader">
+      <a href="#myPanel" data-icon="bullets">Menu</a>
+
+    <h1>Athletiques International </h1>
+      <div data-role="navbar">
+
+      </div>
+  </div>
+</div>
+        
+        <div id="slideshow" >
+            
+                <img src="https://www.mensjournal.com/wp-content/uploads/mf/runner-1280.jpg?w=800&h=450&crop=1">
+            
+                <img src="http://running.competitor.com/files/2014/04/shutterstock_155288909-633x421.jpg">
+            
+            <img src="https://www.thoughtco.com/thmb/Plw0Q9n57EFmdEIvV95pl27aukg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-101882298-5905f4ad3df78c5456f8e9ca.jpg">
+            
+        </div>
+        
+        <div id="home">
+            <div>
+                <h3>WELCOME TO TRACK AND FIELD IN THE GOLDEN HORSESHOE.</h3>
+
+
+                <p>
+                    Athletiques International offers instruction in all track events, from sprints to distance, including hurdles, and most field events. 
+                </p>
+ 
+                <p>
+                    In an effort to make the sport continually more accessible to everyone, the Club has refused to "follow the herd" of clubs that have raised their membership fees beyond the level of member use.   Although their approach and actions are more "professional" than many others in the same role, Athletiques International coaches are not paid for their time and expertise, but receive only the same benefits as members. 
+                </p>
+ 
+                <p>
+                    Club membership can be seasonal (Spring - $35; Summer - $50;  Fall - $25), or yearly  (until December 31 - $75).
+                </p>
+ 
+                <p>
+                    Entry fees and travel are the responsibility of the individual families for those athletes under 17.  Starting in January following the athlete's 17th birthday, the Club funds, to Provincial and National Championships, those athletes making a standard equal to or better than the average of the sixth place finishers over the preceding three years.  All others continue on a "user-pay" basis.
+                </p>
+ 
+                <p>
+                    Membership is open to athletes of any age, sex, or cultural background.  The Club can be contacted by e-mail, at <b><u>athletiques2@hotmail.com</u></b>,  by text at <b><u>289-400-TRAK (8725), or by telephone, at 905-510-4563 or 289-400-8725</u></b>.
+                </p>
+                    
+            </div>
+        </div>
+        
+    <script>
+        //Contrls the Slideshow 
+        $("#slideshow > img:gt(0)").hide();
+        
+        setInterval(function() {
+        $('#slideshow > img:first')
+        .fadeOut(3000)
+        .next()
+        .fadeIn(3000)
+        .end()
+        .appendTo('#slideshow');
+        }, 7000);
+    </script>
+        
+    </body>
+</html>
